@@ -2,6 +2,9 @@
 
 int main()
 {
-    printf("Hello world");
-    return 0;   
+    char strl[1];
+    puts("input: ");
+    scanf("%s",&strl);
+    printf("Hello  %p",strl[1]);
+    return 0;       
 }
