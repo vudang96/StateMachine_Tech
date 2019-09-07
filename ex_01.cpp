@@ -1,10 +1,25 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <string.h>
+
+void print_reverse(char *s)
+{
+    size_t len = strlen(s);
+
+    char *t = s + len - 1;
+
+    while( t >= s)
+    {
+        printf("%c",*t);
+
+        t = t - 1;
+    }
+    puts("");
+
+}
 
 int main()
 {
-    char strl[1];
-    puts("input: ");
-    scanf("%s",&strl);
-    printf("Hello  %p",strl[1]);
-    return 0;       
+    char s[] = "JQK";
+    print_reverse(s);
+    return 0;
 }
